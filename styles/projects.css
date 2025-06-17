@@ -1,0 +1,52 @@
+body {
+  background-color: #242429;
+  color: white;
+  font-family: "MinecraftStandard", sans-serif;
+
+  margin: 0;
+}
+
+@font-face {
+  font-family: MinecraftStandard;
+  src: url("../fonts/MinecraftStandard.otf");
+}
+
+.navbar {
+  background-color: #1b1b1f;
+  padding: 0.5rem 0;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 75vw;
+  margin: 0 auto;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+
+  /* margin: 0;
+  padding: 0; */
+}
+
+.project {
+  width: 60%;
+}
+
+footer {
+  font-size: 1rem;
+  position: absolute;
+  bottom: 1rem;
+}
