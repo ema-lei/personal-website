@@ -72,7 +72,7 @@ body {
 }
 
 .selected-hover:hover::before {
-  content: "»";
+  content: "\00BB";
   margin-right: 0.5rem;
   width: auto;
 }
