@@ -47,6 +47,19 @@ body {
   color: white;
 }
 
+.selected-hover::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  transition: width 0.2s;
+}
+
+.selected-hover:hover::before {
+  content: "»";
+  margin-right: 0.5rem;
+  width: auto;
+}
+
 .page {
   display: flex;
   flex-direction: column;
@@ -63,14 +76,24 @@ body {
   padding: 0;
 }
 
-/* .page::-webkit-scrollbar {
-  width: 100px;
-} */
-
 .project {
   width: 60%;
   margin: 2%;
 }
+
+.shake:hover {
+  animation: shake 0.3s infinite;
+}
+
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  20%  { transform: translateX(-2px); }
+  40%  { transform: translateX(2px); }
+  60%  { transform: translateX(-1px); }
+  80%  { transform: translateX(1px); }
+  100% { transform: translateX(0); }
+}
+
 
 .title {
   font-family: MinecraftStandardBold;

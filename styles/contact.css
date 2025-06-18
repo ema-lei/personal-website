@@ -42,6 +42,19 @@ body {
   color: white;
 }
 
+.selected-hover::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  transition: width 0.2s;
+}
+
+.selected-hover:hover::before {
+  content: "»";
+  margin-right: 0.5rem;
+  width: auto;
+}
+
 .page {
   display: flex;
   flex-direction: column;
