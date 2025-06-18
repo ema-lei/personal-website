@@ -14,6 +14,9 @@ body {
 
   margin: 0;
   padding: 0;
+
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 @font-face {
@@ -62,8 +65,8 @@ body {
 
 footer {
   font-size: 1rem;
-  position: absolute;
-  bottom: 1rem;
+  position: fixed;
+  bottom: 2rem;
 }
 
 .typed-out {
