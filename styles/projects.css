@@ -22,6 +22,7 @@ body {
 
   top: 0;
   width: 100vw;
+  height: 3rem;
   
   position: fixed;
 }
@@ -48,12 +49,12 @@ body {
 
   overflow-y: scroll;
   position: absolute;
-  top: 6rem;
+  top: 3rem;
   bottom: 0;
   left: 0;
   right: 0;
 
-  margin: 0;
+  margin-top: 2rem;
   padding: 0;
 }
 
