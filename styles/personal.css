@@ -99,6 +99,8 @@ body {
 }
 
 .topic {
+  position: relative;
+
   font-family: MinecraftStandardBold;
   color: white;
   text-align: right;
@@ -112,6 +114,31 @@ body {
   cursor: pointer;
 
   margin: 5% 20% 5% 0%;
+}
+
+.topic::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.25em;
+  height: 4px;
+  width: 0;
+  background: white;
+  transform-origin: left center;
+}
+
+
+@keyframes slide-in {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+.topic.active::after {
+  animation: slide-in 0.3s ease-out forwards;
+}
+
+.hidden {
+  display: none;
 }
 
 .image-right {

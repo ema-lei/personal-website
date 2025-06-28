@@ -5,6 +5,7 @@
   <title>Hobbies</title>
   <link rel="icon" href="images/webicon.webp">
   <link rel="stylesheet" href="styles/personal.css">
+  <script src="js/personal.js" defer></script>
 </head>
 
 <body>
@@ -20,10 +21,10 @@
     <div class="topic-wrapper">
 
       <div class="topic-list">
-        <button class="topic">About Me</button>
-        <button class="topic">Hobbies</button>
-        <button class="topic">Likes &#43 Dislikes</button>
-        <button class="topic">Family</button>
+        <button class="topic active" data-name="about-me">About Me</button>
+        <button class="topic" data-name="hobbies">Hobbies</button>
+        <button class="topic" data-name="likes-dislikes">Likes &#43 Dislikes</button>
+        <button class="topic" data-name="family">Family</button>
       </div>
 
       <div class="topic-description">
@@ -31,15 +32,15 @@
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint tempore minus odit ad cupiditate pariatur atque nobis aspernatur repellendus, adipisci eos beatae, assumenda asperiores illum accusamus. Dolore, officia quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint tempore minus odit ad cupiditate pariatur atque nobis aspernatur repellendus, adipisci eos beatae, assumenda asperiores illum accusamus. Dolore, officia quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint tempore minus odit ad cupiditate pariatur atque nobis aspernatur repellendus, adipisci eos beatae, assumenda asperiores illum accusamus. Dolore, officia quas? Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint tempore minus odit ad cupiditate pariatur atque nobis aspernatur repellendus, adipisci eos beatae, assumenda asperiores illum accusamus. Dolore, officia quas?</p>
         </article>
 
-        <article id="hobbies" class="topic-article">
+        <article id="hobbies" class="topic-article hidden">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint tempore minus odit ad cupiditate pariatur atque nobis aspernatur repellendus, adipisci eos beatae, assumenda asperiores illum accusamus. Dolore, officia quas?</p>
         </article>
 
-        <article id="likes-dislikes" class="topic-article">
+        <article id="likes-dislikes" class="topic-article hidden">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint tempore minus odit ad cupiditate pariatur atque nobis aspernatur repellendus, adipisci eos beatae, assumenda asperiores illum accusamus. Dolore, officia quas?</p>
         </article>
 
-        <article id="family" class="topic-article">
+        <article id="family" class="topic-article hidden">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint tempore minus odit ad cupiditate pariatur atque nobis aspernatur repellendus, adipisci eos beatae, assumenda asperiores illum accusamus. Dolore, officia quas?</p>
         </article>
       </div>
