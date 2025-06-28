@@ -1,0 +1,138 @@
+body {
+  background-color: #242429;
+  color: white;
+  font-family: "MinecraftStandard", sans-serif;
+
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+@font-face {
+  font-family: MinecraftStandard;
+  src: url("../fonts/MinecraftStandard.otf");
+}
+
+@font-face {
+  font-family: MinecraftStandardBold;
+  src: url("../fonts/MinecraftStandardBold.otf");
+}
+
+.navbar {
+  background-color: #1b1b1f;
+  padding: 1rem 0;
+
+  top: 0;
+  width: 100vw;
+  height: 3rem;
+
+  position: fixed;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 75vw;
+  margin: 0 auto;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+  text-decoration: none;
+  color: white;
+}
+
+.selected-hover::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  transition: width 0.2s;
+}
+
+.selected-hover:hover::before {
+  content: "\00BB";
+  margin-right: 0.5rem;
+  width: auto;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  overflow-y: scroll;
+  position: absolute;
+  top: 3rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin-top: 2rem;
+  padding: 0;
+}
+
+.topic-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: right;
+
+  width: 60%;
+  margin: 2%;
+}
+
+.topic-list {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: end;
+
+  width: 24%;
+}
+
+.topic-description {
+  width: 76%;
+}
+
+.topic {
+  font-family: MinecraftStandardBold;
+  color: white;
+  text-align: right;
+
+  border: none;
+  background-color: inherit;
+  display: inline;
+  width: fit-content;
+  padding: 0;
+
+  cursor: pointer;
+
+  margin: 5% 20% 5% 0%;
+}
+
+.image-right {
+  float: right;
+  width: 25%;
+
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+}
+
+.image-left {
+  float: left;
+  width: 25%;
+
+  margin-top: 1.5rem;
+  margin-right: 1rem;
+}
+
+footer {
+  font-size: 1rem;
+  position: relative;
+  bottom: 2rem;
+  margin-top: 6rem;
+}
