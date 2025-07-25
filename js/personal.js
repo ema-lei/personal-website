@@ -12,3 +12,12 @@ tabs.forEach(tab => {
         document.getElementById(tab.dataset.name).classList.remove('hidden');
     });
 });
+
+
+const redacted = document.querySelectorAll('.redacted');
+
+redacted.forEach(redacted => {
+    redacted.addEventListener('click', () => {
+        redacted.classList.remove('redacted');
+    });
+});

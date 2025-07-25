@@ -162,6 +162,16 @@ body {
   font-family: MinecraftStandardBold;
 }
 
+.hobbies-description {
+  margin-top: 0.5em;
+  margin-bottom: 2.5em;
+}
+
+.redacted {
+  background-color: white;
+  color: white;
+}
+
 .image-right {
   float: right;
   width: 25%;
